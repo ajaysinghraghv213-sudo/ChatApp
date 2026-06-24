@@ -6,7 +6,7 @@ const Login = () =>{
     const [password,setPassword] = useState('')
     const LoginUser = async() =>{
 
-        const response = await fetch('http://127.0.0.1:8000/login/',{
+        const response = await fetch('https://chatapp-5-4d4v.onrender.com/login/',{
 
             method : "POST",
             headers : {

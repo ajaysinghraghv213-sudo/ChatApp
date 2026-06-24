@@ -8,7 +8,7 @@ const Home = (props) =>{
   const fetchAllUsers = async () => {
     let access = localStorage.getItem("access");
 
-    let response = await fetch(`http://127.0.0.1:8000/users/`, {
+    let response = await fetch(`https://chatapp-5-4d4v.onrender.com/users/`, {
       headers: {
         Authorization: `Bearer ${access}`,
       },
@@ -19,7 +19,7 @@ const Home = (props) =>{
 
       access = localStorage.getItem("access");
 
-      response = await fetch("http://127.0.0.1:8000/users/", {
+      response = await fetch("https://chatapp-5-4d4v.onrender.com/users/", {
         headers: {
           Authorization: `Bearer ${access}`,
         },

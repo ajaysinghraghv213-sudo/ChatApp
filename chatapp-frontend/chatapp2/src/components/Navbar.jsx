@@ -13,7 +13,7 @@ const Navbar = (props) =>{
 
     const LogoutUser = async()=>{
         const access = localStorage.getItem('access')
-        const response = await  fetch('http://127.0.0.1:8000/logout/',{
+        const response = await  fetch('https://chatapp-5-4d4v.onrender.com/logout/',{
             method : "POST",
             headers :{
                 'Authorization':`Bearer ${access}`

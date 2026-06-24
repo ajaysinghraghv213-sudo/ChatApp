@@ -12,7 +12,7 @@ const Profile = () =>{
         let access = localStorage.getItem("access");
 
         let response = await fetch(
-            "http://127.0.0.1:8000/me/",
+            "https://chatapp-5-4d4v.onrender.com/me/",
             {
                 headers: {
                     Authorization: `Bearer ${access}`,
@@ -26,7 +26,7 @@ const Profile = () =>{
             access = localStorage.getItem("access");
 
             response = await fetch(
-                "http://127.0.0.1:8000/me/",
+                "https://chatapp-5-4d4v.onrender.com/me/",
                 {
                     headers: {
                         Authorization: `Bearer ${access}`,
@@ -58,7 +58,7 @@ const Profile = () =>{
     }
 
     const response = await fetch(
-        "http://127.0.0.1:8000/me/",
+        "https://chatapp-5-4d4v.onrender.com/me/",
         {
             method: "PUT",
             headers: {

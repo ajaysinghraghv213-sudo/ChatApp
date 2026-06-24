@@ -3,7 +3,7 @@ import {fetchRefreshToken} from '../utils/utils'
 
 export  const fetchUsers =  async(username) =>{
         let access = localStorage.getItem('access')
-        let response = await fetch(`http://127.0.0.1:8000/users/?username__icontains=${encodeURIComponent(username)}`,{
+        let response = await fetch(`https://chatapp-5-4d4v.onrender.com/users/?username__icontains=${encodeURIComponent(username)}`,{
 
             headers : {
                 "Authorization":`Bearer ${access}`
@@ -13,7 +13,7 @@ export  const fetchUsers =  async(username) =>{
         if(response.status === 401){
             await fetchRefreshToken()
             access = localStorage.getItem('access')
-            response = await fetch(`http://127.0.0.1:8000/users/?username__icontains=${encodeURIComponent(username)}`,{
+            response = await fetch(`https://chatapp-5-4d4v.onrender.com/users/?username__icontains=${encodeURIComponent(username)}`,{
 
             headers : {
                 "Authorization":`Bearer ${access}`

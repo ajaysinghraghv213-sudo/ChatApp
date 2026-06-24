@@ -8,7 +8,7 @@ const Register = () =>{
     const navigate = useNavigate()
     const RegisterUser = async() =>{
 
-        const response = await fetch('http://127.0.0.1:8000/register/',{
+        const response = await fetch('https://chatapp-5-4d4v.onrender.com/register/',{
 
             method : 'POST',
             headers : {

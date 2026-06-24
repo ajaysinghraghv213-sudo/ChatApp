@@ -3,7 +3,7 @@
 export const fetchRefreshToken = async() =>{
     const refresh = localStorage.getItem('refresh')
 
-    const response = await fetch('http://127.0.0.1:8000/refresh/token/',{
+    const response = await fetch('https://chatapp-5-4d4v.onrender.com/refresh/token/',{
 
         method : "POST",
         headers : {

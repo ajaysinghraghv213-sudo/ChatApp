@@ -12,7 +12,7 @@ const Userdetail = () =>{
         let access = localStorage.getItem("access");
 
         let response = await fetch(
-            `http://127.0.0.1:8000/user/${id}/`,
+            `https://chatapp-5-4d4v.onrender.com/user/${id}/`,
             {
                 headers: {
                     Authorization: `Bearer ${access}`,
@@ -26,7 +26,7 @@ const Userdetail = () =>{
             access = localStorage.getItem("access");
 
             response = await fetch(
-                `http://127.0.0.1:8000/user/${id}/`,
+                `https://chatapp-5-4d4v.onrender.com/user/${id}/`,
                 {
                     headers: {
                         Authorization: `Bearer ${access}`,

@@ -28,7 +28,7 @@ const Chat= () =>{
         let access = localStorage.getItem('access');
 
         let response = await fetch(
-            `http://127.0.0.1:8000/chats/${id}/`,
+            `https://chatapp-5-4d4v.onrender.com/chats/${id}/`,
             {
                 headers: {
                     Authorization: `Bearer ${access}`,
@@ -42,7 +42,7 @@ const Chat= () =>{
             access = localStorage.getItem('access');
 
             response = await fetch(
-                `http://127.0.0.1:8000/chats/${id}/`,
+                `https://chatapp-5-4d4v.onrender.com/chats/${id}/`,
                 {
                     headers: {
                         Authorization: `Bearer ${access}`,
@@ -72,7 +72,7 @@ const Chat= () =>{
   const fetchUsers = async () => {
     let access = localStorage.getItem("access");
 
-    let response = await fetch("http://127.0.0.1:8000/users/", {
+    let response = await fetch("https://chatapp-5-4d4v.onrender.com/users/", {
       headers: {
         Authorization: `Bearer ${access}`,
       },
@@ -83,7 +83,7 @@ const Chat= () =>{
 
       access = localStorage.getItem("access");
 
-      response = await fetch("http://127.0.0.1:8000/users/", {
+      response = await fetch("https://chatapp-5-4d4v.onrender.com/users/", {
         headers: {
           Authorization: `Bearer ${access}`,
         },
@@ -261,7 +261,7 @@ const Chat= () =>{
         formData.append('file',files)
         formData.append('message',id)
 
-        const response = await fetch(`http://127.0.0.1:8000/chats/${id}/`,{
+        const response = await fetch(`https://chatapp-5-4d4v.onrender.com/chats/${id}/`,{
 
             method : "POST",
             headers:{
