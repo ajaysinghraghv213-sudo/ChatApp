@@ -135,7 +135,7 @@ CHANNEL_LAYERS = {
         "BACKEND": "channels.layers.InMemoryChannelLayer",
     },
 }
-CORS_ALLOWED_ORIGINS=['http://localhost:5173']
+CORS_ALLOWED_ORIGINS=['https://chat-app-rlw8.vercel.app']
 REST_FRAMEWORK={
     'DEFAULT_AUTHENTICATION_CLASSES':['rest_framework_simplejwt.authentication.JWTAuthentication'],
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
