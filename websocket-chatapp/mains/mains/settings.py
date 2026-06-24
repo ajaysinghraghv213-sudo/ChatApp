@@ -136,10 +136,10 @@ CHANNEL_LAYERS = {
         "BACKEND": "channels.layers.InMemoryChannelLayer",
     },
 }
-# CORS_ALLOWED_ORIGINS = [
-#     "https://chat-app-rlw8.vercel.app",
-#     "https://chat-app-rlw8-q580qp4lm-ajaysinghraghv213-sudos-projects.vercel.app",
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "https://chat-app-rlw8.vercel.app",
+    "https://chat-app-rlw8-q580qp4lm-ajaysinghraghv213-sudos-projects.vercel.app",
+]
 REST_FRAMEWORK={
     'DEFAULT_AUTHENTICATION_CLASSES':['rest_framework_simplejwt.authentication.JWTAuthentication'],
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
