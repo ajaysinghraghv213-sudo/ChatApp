@@ -16,7 +16,8 @@ const Login = () =>{
                 username,password
             })
         })
-        const data = await response.json()
+        const data = await response.text()
+        console.log(data)
         if (response.ok){
             localStorage.setItem("access",data.access)
             localStorage.setItem('refresh',data.refresh)
