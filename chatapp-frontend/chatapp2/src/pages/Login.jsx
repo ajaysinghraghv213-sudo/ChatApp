@@ -16,6 +16,11 @@ const Login = () =>{
                 username,password
             })
         })
+        console.log(response.status)
+console.log(response.headers.get("content-type"))
+
+const text = await response.text()
+console.log(text)
         const data = await response.text()
         console.log(data)
         if (response.ok){
